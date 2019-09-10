@@ -1,0 +1,6 @@
+include ':app'
+include ':logincomponent', ':minecomponent'
+include ':basecomponent'
+project(':basecomponent').projectDir = new File(settingsDir, '../common_modules/basecomponent')
+include ':utillibrary'
+project(':utillibrary').projectDir = new File(settingsDir, '../common_modules/utillibrary')
